@@ -68,7 +68,7 @@ header .cart__icon span{
     position: fixed;
     inset: 0 auto 0 -500px;
     display: grid;
-    grid-template-rows: 70px 1fr 70px ;
+    grid-template-rows: 80px 1fr 70px ;
     transition:  .5s;
 }
 
@@ -84,6 +84,25 @@ body.showCart .container{
     padding: 20px;
     margin: 0;
     font-weight: 300;
+    width: 300px;
+}
+.cartTab h1::after {
+    content: "";
+    display: block;
+    width: 400px;
+    height: 2px;
+    background-color: #E8BC0E;
+    margin: 5px auto;
+    opacity: .5;
+}
+.cartTab .CartHeader{
+    height: 80px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.cartTab .CartHeader .h5 {
+    top: 20px;
 }
 
 .cartTab .cart_btn{
